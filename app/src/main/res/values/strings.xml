@@ -9,4 +9,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="place_holder_weather">Weather place holder</string>
     <string name="place_holder_notification">Notification place holder</string>
+
+    <string name="hint_first">First Name</string>
+    <string name="hint_last">Last Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_password_again">Retype Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_register_short">Register</string>
+    <string name="display_header_title">Phish Shows Welcomes:</string>
+    <string name="image_description_logo">The Phish Logo</string>
 </resources>

@@ -1,4 +1,4 @@
-package ui;
+package edu.uw.tcss450.chatapp.ui;
 
 import android.app.Application;
 

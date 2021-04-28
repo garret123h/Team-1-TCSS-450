@@ -1,8 +1,14 @@
 package edu.uw.tcss450.chatapp;
 
-public class AuthActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
-    // Test commit
-    // test by taehong
-  
+import android.os.Bundle;
+
+public class AuthActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_auth);
+    }
 }
