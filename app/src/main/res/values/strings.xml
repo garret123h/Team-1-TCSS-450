@@ -25,7 +25,7 @@
     <string name="place_holder_notification">Notification Place Holder</string>
 
 
-<!--    weather -->
+    <!--    weather -->
     <string name="text_city_name">Tacoma</string>
     <string name="text_unit">°F</string>
     <string name="text_condition">Sunny</string>
