@@ -24,8 +24,8 @@
     <string name="place_holder_weather">Weather Place Holder</string>
     <string name="place_holder_notification">Notification Place Holder</string>
 
-
     <!--    weather -->
+
     <string name="text_city_name">Tacoma</string>
     <string name="text_unit">°F</string>
     <string name="text_condition">Sunny</string>
@@ -46,8 +46,12 @@
     <string name="full_day">hourly weather</string>
     <string name="todo">todo</string>
 
+    <!--    contacts-->
+    <string name="text_name_contact">John Smith</string>
+
     <!--Resources for the email verification-->
     <string name="email_code_hint">Please Enter Email Verification Code</string>
     <string name="submit_email">Submit</string>
+
 
 </resources>

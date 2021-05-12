@@ -5,6 +5,7 @@
     android:id="@+id/main_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/sunnyweather"
     tools:context=".ui.weather.WeatherListFragment">
     <!-- TODO: Update blank fragment layout -->
 
@@ -111,6 +112,9 @@
         android:autofillHints=""
         android:hint="@string/action_enter_zipcode"
         android:inputType="textPostalAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.037"
@@ -138,8 +142,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toEndOf="@+id/button_zipcode_search" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

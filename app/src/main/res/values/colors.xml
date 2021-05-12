@@ -13,6 +13,10 @@
     <color name="colorOffWhite">#E9E9E9</color>
     <color name="colorPrimaryAlpha">#226200EE</color>
 
+    <!-- Main theme colors -->
+    <color name="brownOrange">#CA6001</color>
+    <color name="darkGray">#2F3134</color>
+
     <!--    chat-->
 
     <color name="primaryColor">#4527a0</color>
