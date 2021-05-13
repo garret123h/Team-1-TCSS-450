@@ -18,12 +18,9 @@ import edu.uw.tcss450.chatapp.databinding.FragmentWeatherHourlyCardBinding;
 public class WeatherHourlyRecyclerViewAdapter extends
         RecyclerView.Adapter<WeatherHourlyRecyclerViewAdapter.WeatherViewHolder> {
     private final List<WeatherPost> mWeathers;
-    private final Map<WeatherPost, Boolean> mExpandedFlags;
 
     public WeatherHourlyRecyclerViewAdapter(List<WeatherPost> items) {
         this.mWeathers = items;
-        mExpandedFlags = mWeathers.stream()
-                .collect(Collectors.toMap(Function.identity(), weather -> false));
     }
 
     @NonNull
@@ -64,11 +61,14 @@ public class WeatherHourlyRecyclerViewAdapter extends
 
 
         /**
-         * Helper used to determine if the preview should be displayed or not.
+         * set the weather components (to be implemented using weather API later
          */
 
         void setWeather(final WeatherPost weather) {
             mWeather = weather;
-        }
-    }
+            binding.textTemperature.setText(mWeather.getmTemperature());
+            binding.textCondition.setText(mWeather.getmCondition());
+            binding.textWeatherTime.setText(mWeather.getmTime());
+            //set the image icon to be implemented using if else depending on the condition
+        }    }
 }

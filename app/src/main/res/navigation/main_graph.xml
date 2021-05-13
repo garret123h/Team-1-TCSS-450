@@ -31,8 +31,8 @@
     <fragment
         android:id="@+id/navigation_weather"
         android:name="edu.uw.tcss450.chatapp.ui.weather.WeatherListFragment"
-        android:label="fragment_weather_list"
-        tools:layout="@layout/fragment_weather_list" >
+        android:label="Weather"
+        tools:layout="@layout/fragment_weather_list">
         <action
             android:id="@+id/action_navigation_weather_to_weatherMapFragment"
             app:destination="@id/weatherMapFragment" />

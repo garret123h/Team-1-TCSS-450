@@ -31,7 +31,7 @@ public class WeatherDailyRecyclerViewAdapter extends
     public WeatherDailyRecyclerViewAdapter.WeatherViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new WeatherDailyRecyclerViewAdapter.WeatherViewHolder(LayoutInflater
                 .from(parent.getContext())
-                .inflate(R.layout.fragment_weather_hourly_card, parent, false));
+                .inflate(R.layout.fragment_weather_daily_card, parent, false));
     }
 
     @Override
@@ -66,8 +66,14 @@ public class WeatherDailyRecyclerViewAdapter extends
          * Helper used to determine if the preview should be displayed or not.
          */
 
-        void setWeather(final WeatherPost weather) {
-            mWeather = weather;
-        }
-    }
+        void setWeather(final WeatherPost weatherDaily)
+        {
+            mWeather = weatherDaily;
+            binding.textMinTemp.setText(mWeather.getmMinTemperature());
+            binding.textMaxTemp.setText(mWeather.getmMaxTemperature());
+            binding.textCondition.setText(mWeather.getmCondition());
+            binding.textWeatherDate.setText(mWeather.getmDate());
+            //set the image icon to be implemented using if else depending on the condition
+
+        }    }
 }
