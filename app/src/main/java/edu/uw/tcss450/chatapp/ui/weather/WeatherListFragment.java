@@ -38,7 +38,7 @@ public class WeatherListFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         FragmentWeatherListBinding binding = FragmentWeatherListBinding.bind(getView());
-        //create dummy data for hourly weather
+        //create dummy data for hourly weather (to be changed later
         List<WeatherPost> listItemsHourly = new ArrayList<>();
         for(int i = 0; i<= 23; i++){
             WeatherPost listItem = new WeatherPost(
@@ -46,7 +46,7 @@ public class WeatherListFragment extends Fragment {
                     "Tacoma", "Sunny", "56", "75", "05/13/2021");
             listItemsHourly.add(listItem);
         }
-        //create dummy data for daily weather
+        //create dummy data for daily weather (to be changed later)
         List<WeatherPost> listItemsDaily = new ArrayList<>();
         for(int i = 0; i<= 9; i++){
             WeatherPost listItem = new WeatherPost(
@@ -54,7 +54,7 @@ public class WeatherListFragment extends Fragment {
                     "Tacoma", "Sunny", "56", "75", "05/13/2021");
             listItemsDaily.add(listItem);
         }
-
+        //adapt the items on the two recyclerviews
         binding.hourlyListRoot.setAdapter(new WeatherHourlyRecyclerViewAdapter(listItemsHourly));
         binding.dailyListRoot.setAdapter(new WeatherDailyRecyclerViewAdapter(listItemsDaily));
 

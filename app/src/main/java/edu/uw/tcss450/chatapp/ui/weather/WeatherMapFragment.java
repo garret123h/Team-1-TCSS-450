@@ -31,13 +31,6 @@ public class WeatherMapFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         FragmentWeatherMapBinding binding = FragmentWeatherMapBinding.bind(getView());
 
-//        binding.buttonConfirmLocation.setOnClickListener(button ->
-//                Navigation.findNavController(getView()).navigate(
-//                        WeatherMapFragmentDirections.actionWeatherMapFragmentToWeatherFragment())
-//        );
-
-
-
     }
 
 

@@ -48,7 +48,7 @@ public class WeatherDailyRecyclerViewAdapter extends
     }
     /**
      * Objects from this class represent an Individual row View from the List
-     * of rows in the Blog Recycler View.
+     * of rows in the weather Recycler View.
      */
     public class WeatherViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
@@ -63,7 +63,8 @@ public class WeatherDailyRecyclerViewAdapter extends
 
 
         /**
-         * Helper used to determine if the preview should be displayed or not.
+         *  set the components of the daily weather cards with dummydatas (to be
+         *  changed with actual data later
          */
 
         void setWeather(final WeatherPost weatherDaily)

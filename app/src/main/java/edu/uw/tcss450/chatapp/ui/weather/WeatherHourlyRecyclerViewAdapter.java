@@ -45,7 +45,7 @@ public class WeatherHourlyRecyclerViewAdapter extends
     }
     /**
      * Objects from this class represent an Individual row View from the List
-     * of rows in the Blog Recycler View.
+     * of rows in the weather Recycler View.
      */
     public class WeatherViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
@@ -61,9 +61,9 @@ public class WeatherHourlyRecyclerViewAdapter extends
 
 
         /**
-         * set the weather components (to be implemented using weather API later
+         *  set the components of the hourly weather cards with dummydatas (to be
+         *  changed with actual data later
          */
-
         void setWeather(final WeatherPost weather) {
             mWeather = weather;
             binding.textTemperature.setText(mWeather.getmTemperature());

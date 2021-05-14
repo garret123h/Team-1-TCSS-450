@@ -1,6 +1,8 @@
 package edu.uw.tcss450.chatapp.ui.weather;
 
-
+/**
+ * Class to encapsulate weather data from weather API
+*/
 public class WeatherPost {
     private final String mTime;
     private final String mCity;

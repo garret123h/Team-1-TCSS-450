@@ -109,35 +109,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/text_max_temp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="165dp"
-            android:layout_marginBottom="8dp"
-            android:text="@string/text_maximum_temp"
-            android:textAppearance="?attr/textAppearanceListItem"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/text_min_temp"
-            app:layout_constraintTop_toBottomOf="@+id/text_condition" />
-
-        <TextView
-            android:id="@+id/text_min_temp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="165dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="@string/text_minimum_temp"
-            android:textAppearance="?attr/textAppearanceListItem"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/text_max_temp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_condition" />
+        <ImageView
+            android:id="@+id/image_weather"
+            android:layout_width="86dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="51dp"
+            android:src="@drawable/ic_weather_sunny"
+            app:layout_constraintEnd_toStartOf="@+id/text_city"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_condition"
