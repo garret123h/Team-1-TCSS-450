@@ -15,7 +15,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import edu.uw.tcss450.chatapp.R;
-import edu.uw.tcss450.chatapp.ui.weather.WeatherPost;
 
 public class ContactListRecyclerViewAdapter extends
         RecyclerView.Adapter<ContactListRecyclerViewAdapter.ContactViewHolder> {
