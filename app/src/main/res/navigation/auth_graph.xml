@@ -25,6 +25,12 @@
             app:argType="string"
             app:nullable="true"
             android:defaultValue="default" />
+        <action
+            android:id="@+id/action_SignInFragment_to_sendPasswordChangeRequest"
+            app:destination="@id/sendPasswordChangeRequest" />
+        <action
+            android:id="@+id/action_SignInFragment_to_setPasswordFragment"
+            app:destination="@id/setPasswordFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -45,6 +51,9 @@
         <argument
             android:name="jwt"
             app:argType="string" />
+        <argument
+            android:name="memberid"
+            app:argType="integer" />
     </activity>
     <fragment
         android:id="@+id/emailVerificationFragment"
@@ -53,6 +62,31 @@
         tools:layout="@layout/fragment_email_verification" >
         <action
             android:id="@+id/action_emailVerificationFragment_to_SignInFragment"
+            app:destination="@id/SignInFragment" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendPasswordChangeRequest"
+        android:name="edu.uw.tcss450.chatapp.ui.auth.signin.SendPasswordChangeRequest"
+        android:label="SendPasswordChangeRequest" >
+        <action
+            android:id="@+id/action_sendPasswordChangeRequest_to_SignInFragment"
+            app:destination="@id/SignInFragment" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/setPasswordFragment"
+        android:name="edu.uw.tcss450.chatapp.ui.auth.signin.SetPasswordFragment"
+        android:label="SetPasswordFragment" >
+        <action
+            android:id="@+id/action_setPasswordFragment_to_SignInFragment"
             app:destination="@id/SignInFragment" />
         <argument
             android:name="email"
